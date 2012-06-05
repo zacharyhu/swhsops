@@ -36,7 +36,7 @@ where num = 2) as active4,
 (select
 (select count(distinct vc_stb_id) 
 from z_user_active  
-where left(l_date,6)=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 2 DAY),'%y%m%d') and left(l_create_date,6)=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY),'%y%m%d'))
+where left(l_date,6)=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY),'%y%m%d') and left(l_create_date,6)=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 2 DAY),'%y%m%d'))
 /
 (select count(distinct vc_stb_id) 
 from z_user_active 
@@ -44,7 +44,7 @@ where left(l_create_date,6)=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 2 DAY),'%y%
 (select
 (select count(distinct vc_stb_id) 
 from z_user_active  
-where left(l_date,6)=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 4 DAY),'%y%m%d') and left(l_create_date,6)=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY),'%y%m%d'))
+where left(l_date,6)=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY),'%y%m%d') and left(l_create_date,6)=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 4 DAY),'%y%m%d'))
 /
 (select count(distinct vc_stb_id) 
 from z_user_active 
@@ -52,7 +52,7 @@ where left(l_create_date,6)=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY),'%y%
 (select
 (select count(distinct vc_stb_id) 
 from z_user_active  
-where left(l_date,6)=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 8 DAY),'%y%m%d') and left(l_create_date,6)=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY),'%y%m%d'))
+where left(l_date,6)=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY),'%y%m%d') and left(l_create_date,6)=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 8 DAY),'%y%m%d'))
 /
 (select count(distinct vc_stb_id) 
 from z_user_active 
@@ -60,7 +60,7 @@ where left(l_create_date,6)=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY),'%y%
 (select
 (select count(distinct vc_stb_id) 
 from z_user_active  
-where left(l_date,6)=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 16 DAY),'%y%m%d') and left(l_create_date,6)=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY),'%y%m%d'))
+where left(l_date,6)=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY),'%y%m%d') and left(l_create_date,6)=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 16 DAY),'%y%m%d'))
 /
 (select count(distinct vc_stb_id) 
 from z_user_active 
@@ -68,7 +68,7 @@ where left(l_create_date,6)=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY),'%y%
 (select
 (select count(distinct vc_stb_id) 
 from z_user_active  
-where left(l_date,6)=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 31 DAY),'%y%m%d') and left(l_create_date,6)=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY),'%y%m%d'))
+where left(l_date,6)=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY),'%y%m%d') and left(l_create_date,6)=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 31 DAY),'%y%m%d'))
 /
 (select count(distinct vc_stb_id) 
 from z_user_active 

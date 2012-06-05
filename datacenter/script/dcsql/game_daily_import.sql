@@ -12,6 +12,6 @@ select DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY),'%y%m%d') as date,
 (SELECT chg_points FROM `gp_chg_daily` WHERE date=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY),'%y%m%d') and `game_id`='240') as sk1_p,
 (SELECT user_num FROM `gp_chg_daily` WHERE date=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY),'%y%m%d') and `game_id`='240') as sk1_n,
 (SELECT chg_points FROM `gp_chg_daily` WHERE date=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY),'%y%m%d') and `game_id`='250') as hlg_p,
-(SELECT user_num FROM `gp_chg_daily` WHERE date=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY),'%y%m%d') and `game_id`='250') as hlg_n,
+(SELECT count(DISTINCT vc_user_id ) FROM  hlg_login WHERE l_date=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY),'%y%m%d')) as hlg_n,
 (SELECT sum(l_coin)/100 as mxd_cash FROM `TCoinLog` where l_date=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY),'%y%m%d')) as mxd_cash,
 (SELECT count(distinct vc_userid) as mxd_num FROM `TCoinLog` where l_date=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY),'%y%m%d')) as mxd_n;
