@@ -1,0 +1,111 @@
+===========daily report=================================
+l_date	active	active2	active3	active4	stay	stay3	stay7	stay15	stay30	newnum	newnum_play
+121029	3166	2296	1449	1346	0.08000000	0.11428571	0	0.17142857	0.05714285	190	35
+l_date	cash_sum	total_num	avg	l_type	name
+121029	196	9	21.7777777	201	康德充值
+121029	2	1	2.00000000	204	推箱子切水果
+121029	742	28	26.5000000	205	小小西游
+121029	188	24	7.83333333	207	赛车
+121029	1613	140	11.5214285	501	游戏点充值
+121029	47	5	9.40000000	502	炮轰外星人
+121029	65	6	10.8333333	503	小鬼当家
+121029	524	41	12.7804878	101	拓展充值
+l_date	mon_points	mon_num	coin_points	coin_num	ingame_num	incash_num	cash
+121029	1500000	15	3412120	704	645	44	1612
+l_date	total_p	niu_p	niu_n	marj_p	marj_n	bbsk_p	bbsk_n	sk_p	sk_n	sk1_p	sk1_n	hlg_p	hlg_n	mxd_cash	mxd_n
+121029	-27394105			-6396319	793	-577370	102	-5738028	1096	-4526141	339	-828000	1068		0
+l_date	l_gid	l_game_name	total_num	user_num	avg_num	game_points	cash_sum
+121029	228	New_四国军棋	68	21	3	-48400	0
+121029	230	4.0百变双扣	984	102	10	-577370	0
+121029	234	New_翻翻棋	356	86	4	-127500	0
+121029	246	New_幸运大转盘	615	295	2	-680400	0
+121029	250	New_欢乐谷	276	74	4	-828000	0
+121029	303	4.0飞行棋	1	1	1	-8000	0
+121029	304	4.0关牌	1309	162	8	-465131	0
+121029	305	4.0杭麻	21880	793	28	-6396319	0
+121029	307	4.0三扣一	6249	339	18	-4526141	0
+121029	308	4.0双扣	19951	1096	18	-5738028	0
+121029	310	4.0象棋	923	155	6	-264000	0
+121029	311	4.0五子棋	16	4	4	0	0
+121029	312	4.0五子棋禁手	20	4	5	0	0
+121029	313	4.3炸金花	20786	216	96	-11736615	0
+121029	501	牛神活动版	1265	49	26	4001799	0
+121029	999	新版正式计费充值	184	141	1	17960000	0
+count(*)
+15553
+======================total cash==================
+sum(cash_sum)
+3377
+==========lucky=====
+chg_points	user_num
+-680400	295
+========================top 3 recharge=============================
+member_id	sum(t1.chg_game_points)	vc_stb_id
+1330839	1200000	014204001011600024C1206236
+1235548	720000	011704001011600024C1178492
+1509138	600000	120317007051000019F0643527
+========================game info=============================
+l_date	game_id	game_desc	chg_points	user_num	total_num
+121029	228	四国军棋	-48400	21	68
+121029	230	百变双扣	-577370	102	984
+121029	234	翻翻棋	-127500	86	356
+121029	246	幸运大转盘	-680400	295	615
+121029	250	欢乐谷	-828000	74	276
+121029	303	4.0新框飞行棋	-8000	1	1
+121029	304	4.0新框关牌	-465131	162	1309
+121029	305	4.0杭麻	-6396319	793	21880
+121029	307	4.0三扣一	-4526141	339	6249
+121029	308	4.0双扣	-5738028	1096	19951
+121029	310	4.0象棋	-264000	155	923
+121029	313	三张牌	-11736615	216	20786
+121029	501	牛神	4001799	49	1265
+121029	999	新版本限制充值	17960000	141	184
+============================================================new billing_recharge data=================================
+recharge 50 limited.
+count(distinct t2.vc_account_no)
+0
+recharge 50 below zero
+count(distinct t2.vc_account_no)
+1
+recharge 50 total
+count(distinct t2.vc_account_no)
+3
+recharge 30 limited.
+count(distinct t2.vc_account_no)
+0
+recharge 30 below zero
+count(distinct t2.vc_account_no)
+1
+recharge 30 total
+count(distinct t2.vc_account_no)
+3
+recharge 10 limited.
+count(distinct t2.vc_account_no)
+4
+recharge 10 below zero
+count(distinct t2.vc_account_no)
+26
+recharge 10 total
+count(distinct t2.vc_account_no)
+61
+recharge 5 limited.
+count(distinct t2.vc_account_no)
+2
+recharge 5 below zero
+count(distinct t2.vc_account_no)
+21
+recharge 5 total
+count(distinct t2.vc_account_no)
+32
+recharge 2 limited.
+count(distinct t2.vc_account_no)
+5
+recharge 2 below zero
+count(distinct t2.vc_account_no)
+29
+recharge 2 total
+count(distinct t2.vc_account_no)
+44
+recharge below -300
+count(distinct t2.vc_account_no)	sum(t1.l_money)/100
+1	5.0000

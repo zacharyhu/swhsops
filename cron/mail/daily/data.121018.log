@@ -1,0 +1,94 @@
+===========daily report=================================
+date	active	active2	active3	active4	stay	stay3	stay7	stay15	stay30	newnum	newnum_play
+121018	3326	2307	952	810	0.18918918	0.17777777	0.02222222	0.08888888	0.13333333	181	45
+l_date	cash_sum	total_num	avg	l_type
+121018	386	42	9.19047619	1
+121018	1453	131	11.0916030	2
+121018	243	23	10.5652173	3
+121018	60	6	10.0000000	4
+121018	34	6	5.66666666	5
+121018	16	7	2.28571428	6
+121018	1049	43	24.3953488	205
+date	mon_points	mon_num	coin_points	coin_num	ingame_num	incash_num	cash
+121018	1800000	18	3471300	694	617	0	
+date	total_p	niu_p	niu_n	marj_p	marj_n	bbsk_p	bbsk_n	sk_p	sk_n	sk1_p	sk1_n	hlg_p	hlg_n	mxd_cash	mxd_n
+121018	-25087228			-6032119	783	-868349	122	-5666632	1059	-3479882	318	-1089000	1244		0
+count(*)
+12143
+======================total cash==================
+sum(cash_sum)
+3241
+==========lucky=====
+chg_points	user_num
+-764500	298
+========================top 3 recharge=============================
+member_id	sum(t1.chg_game_points)	vc_stb_id
+1464405	720000	120517002051000019F05CCF5A
+1499215	240000	089084001011800024C1297DEC
+1306251	240000	014404001011600024C115C0AB
+========================game info=============================
+date	game_desc	chg_points	user_num	total_num
+121018	四国军棋	-27200	23	44
+121018	百变双扣	-868349	122	1336
+121018	翻翻棋	-85000	80	268
+121018	幸运大转盘	-764500	298	624
+121018	欢乐谷	-1089000	96	363
+121018	4.0新框飞行棋	-60800	7	22
+121018	4.0新框关牌	-346236	144	866
+121018	4.0杭麻	-6032119	783	20114
+121018	4.0三扣一	-3479882	318	5478
+121018	4.0双扣	-5666632	1059	18932
+121018	4.0梭哈	-47600	2	6
+121018	4.0象棋	-417000	161	892
+121018	三张牌	-2108450	242	15724
+121018	牛神	-4092460	92	3342
+121018	新版本限制充值	16750000	131	157
+============================================================new billing_recharge data=================================
+recharge 50 limited.
+count(distinct t2.vc_account_no)
+0
+recharge 50 below zero
+count(distinct t2.vc_account_no)
+2
+recharge 50 total
+count(distinct t2.vc_account_no)
+2
+recharge 30 limited.
+count(distinct t2.vc_account_no)
+0
+recharge 30 below zero
+count(distinct t2.vc_account_no)
+1
+recharge 30 total
+count(distinct t2.vc_account_no)
+3
+recharge 10 limited.
+count(distinct t2.vc_account_no)
+6
+recharge 10 below zero
+count(distinct t2.vc_account_no)
+30
+recharge 10 total
+count(distinct t2.vc_account_no)
+69
+recharge 5 limited.
+count(distinct t2.vc_account_no)
+3
+recharge 5 below zero
+count(distinct t2.vc_account_no)
+14
+recharge 5 total
+count(distinct t2.vc_account_no)
+28
+recharge 2 limited.
+count(distinct t2.vc_account_no)
+5
+recharge 2 below zero
+count(distinct t2.vc_account_no)
+22
+recharge 2 total
+count(distinct t2.vc_account_no)
+42
+recharge below -300
+count(distinct t2.vc_account_no)	sum(t1.l_money)/100
+1	56.0000
