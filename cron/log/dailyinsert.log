@@ -1,3 +1,0 @@
-no /data/userdata/20121107/20121107.sql
-ERROR 1062 (23000) at line 1: Duplicate entry '121106' for key 'PRIMARY'
-/cron/data/datainsert.sh: line 91: $sql14: ambiguous redirect

@@ -1,10 +1,4 @@
 <?php
-	//step 1 connect
-	$link=mysql_connect("10.48.179.112", "dc", "dc");
-
-	if(!$link){
-		echo "与数据库建立连失败!";
-		exit;	
-	}
-	//step 2 select db
-	mysql_select_db("datacenter");
+      $link=@mysql_connect("localhost","root","abcd1234")or die("mysql connect error");
+      $db_selected=@mysql_select_db("test")or die("db conn error");
+      mysql_set_charset("utf8",$link);
