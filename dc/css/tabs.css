@@ -1,0 +1,64 @@
+body
+{
+	font-family:"Trebuchet MS",verdana;
+	background-image: url(../clod.jpg);
+	background-color:000;
+    background-position: center;
+    background-repeat: no-repeat;
+	height:720px;
+}
+h3
+{
+	margin:0;padding:0;
+}
+ul
+{
+	float: left;
+	list-style: none;
+	margin-left:410px;
+	padding: 1pt;
+	width:340px;
+	height:25px
+}
+li
+{
+	border-left:1px solid #000;
+	border-right:1px solid #000;
+	cursor:pointer;
+	float:left;
+	padding:5px;
+	text-align:center;
+	width:55px;
+	height:24px;
+}
+.tabContainer
+{
+	margin-left:93px;
+	margin-top:49px;
+	border:1px solid #000;
+	float:left;
+	width:1145px;
+	height:425px;
+}
+.tabContent
+{
+	border-top:1px solid #000;
+	float:left;
+	height:413px;
+	padding:5px;
+	text-align:justify;
+	width:1145px;
+}
+.active
+{
+	background:url(../clod.jpg) no-repeat -675px -491px;
+	width:46px;
+	height:27px;
+	color:blue;
+}
+#bk_1
+{
+	background-image: url(../move_bg.jpg);
+}
+
+//css´úÂë
