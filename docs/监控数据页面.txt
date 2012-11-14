@@ -1,0 +1,4 @@
+
+cpu、内存、流量（cacti）
+端口存活、portcheck
+

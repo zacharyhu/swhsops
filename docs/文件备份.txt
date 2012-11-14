@@ -1,0 +1,13 @@
+门户备份 /app/tomcat/webapps
+
+游戏备份 3.0 4.0 三国杀 欢乐谷 新疆游戏
+
+mysql-oracle的每天备份
+
+rsync 同步门户及游戏
+
+
+欢乐谷LVS负载均衡
+
+门户nginx负载均衡 多个备用门户
+137 proxypass
