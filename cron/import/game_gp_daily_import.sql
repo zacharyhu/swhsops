@@ -3,7 +3,7 @@ SELECT DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY),'%y%m%d') as l_date,t1.ga
 where t1.l_date=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY),'%y%m%d')
 and t1.game_id=t2.l_game_id;
 
-update dailyreport_game_play set total_num=(SELECT count(vc_user_id ) FROM  hlg_login WHERE l_date=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY),'%y%m%d')),user_num=(SELECT count(DISTINCT vc_user_id ) FROM  hlg_login WHERE l_date=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY),'%y%m%d')),avg_num=(SELECT count(vc_user_id ) FROM  hlg_login WHERE l_date=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY),'%y%m%d'))/(SELECT count(DISTINCT vc_user_id ) FROM  hlg_login WHERE l_date=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY),'%y%m%d'))   where l_date=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY),'%y%m%d') and l_gid=250;
+update dailyreport_game_play set total_num=(SELECT count(vc_user_id ) FROM  hlg_login WHERE l_date=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY),'%y%m%d')),user_num=(SELECT count(DISTINCT vc_user_id ) FROM  hlg_login WHERE l_date=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY),'%y%m%d')),avg_num=(SELECT count(vc_user_id ) FROM  hlg_login WHERE l_date=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY),'%y%m%d'))/(SELECT count(DISTINCT vc_user_id ) FROM  hlg_login WHERE l_date=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY),'%y%m%d'))   where l_date=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY),'%y%m%d') and l_gid=250 and l_source=201;
 
 
 

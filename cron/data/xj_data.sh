@@ -95,4 +95,15 @@ where
 t1.vc_user_no=t2.vc_user_no
 and t2.l_create_date=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 31 DAY),'%y%m%d'))) as stay30" |mysql -h10.48.179.112 -utvgp -ptvgp tvgame
 
+###=======================================================##
+
+echo "
+insert into datacenter.dailyreport_game_play(l_date,l_gid,l_game_name,total_num,user_num,avg_num,game_points,l_source)
+SELECT t1.l_date,t1.l_game_id,t2.game_name,t1.l_sum,t1.l_num,t1.l_sum/t1.l_num,l_gp_change,'105'
+FROM tvgame.xj_data_game_point t1,datacenter.gp_gameid_cfg t2
+WHERE 
+t1.l_game_id=t2.game_id
+and t1.l_date=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY),'%y%m%d')" |mysql -h10.48.179.112 -udc -pdc 
+
+
 

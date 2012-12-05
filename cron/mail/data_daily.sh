@@ -4,6 +4,7 @@
 
 DATE=`date -d -1day +%y%m%d`
 LOGFILE=/cron/mail/daily/data.$DATE.log
+myquery="mysql -h10.48.179.112 -udc -pdc datacenter -N"
 
 
 echo "===========daily report=================================">>$LOGFILE
@@ -30,5 +31,6 @@ echo "========================game info=============================" >>$LOGFILE
 mysql -h10.48.179.112 -udc -pdc datacenter  --default-character-set=utf8 -e "SELECT t1.l_date ,t2.game_id,t2.game_desc,t1.chg_points,t1.user_num,t1.total_num FROM gp_chg_daily t1, gp_gameid_cfg t2 WHERE t1.l_date=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY),'%y%m%d') AND t1.game_id = t2.game_id;"  >>$LOGFILE
 
 
+sed -i -e 's/\s\+/\n/g' $LOGFILE
 
 cat $LOGFILE |mutt -s "data_$DATE" huzhiwei01@yunyou.tv,liwarn@yunyou.tv,mashiliang@yunyou.tv
